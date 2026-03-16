@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакти — ЕЛТЕХ</title>
+  <meta name="description" content="Контакти ТзДВ ЕЛТЕХ. Адреса: вул. Автобусна, м. Нововолинськ 45400, Україна. Тел: +38 03344 41135." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="logo-el">ЕЛ</span><span class="logo-tech">ТЕХ</span>
+      </a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="index.html" class="nav__link">Головна</a></li>
+        <li><a href="products.html" class="nav__link">Продукція</a></li>
+        <li><a href="services.html" class="nav__link">Послуги</a></li>
+        <li><a href="contact.html" class="nav__link active nav__link--cta">Контакти</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Контакти</h1>
+      <p>Зв'яжіться з нами — ми готові відповісти на всі ваші запитання</p>
+    </div>
+  </div>
+
+  <main>
+    <section class="contact-page">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2>Як з нами зв'язатись</h2>
+            <p>
+              Наші спеціалісти готові проконсультувати вас щодо вибору обладнання,
+              умов постачання та надання послуг. Зателефонуйте або напишіть нам.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <div class="contact-detail__icon">📍</div>
+                <div>
+                  <div class="contact-detail__label">Адреса</div>
+                  <div class="contact-detail__value">
+                    ТзДВ «ЕЛТЕХ»<br/>
+                    вул. Автобусна<br/>
+                    м. Нововолинськ, 45400<br/>
+                    Україна
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail__icon">📞</div>
+                <div>
+                  <div class="contact-detail__label">Телефон</div>
+                  <div class="contact-detail__value">
+                    <a href="tel:+380334441135">+38 03344 41135</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail__icon">📱</div>
+                <div>
+                  <div class="contact-detail__label">Мобільний</div>
+                  <div class="contact-detail__value">
+                    <a href="tel:+380983785773">+38 0983 785 773</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail__icon">✉️</div>
+                <div>
+                  <div class="contact-detail__label">Email</div>
+                  <div class="contact-detail__value">
+                    <a href="mailto:eltech@eltech.com.ua">eltech@eltech.com.ua</a><br/>
+                    <a href="mailto:eltech.ukr@gmail.com">eltech.ukr@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Representatives -->
+            <div class="contact-reps">
+              <h4>Офіційні представники</h4>
+              <div class="rep-item">
+                <strong>🇵🇱 Польща</strong>
+                <span>CONTRANS TI Sp. z o.o.</span>
+              </div>
+              <div class="rep-item">
+                <strong>🇱🇻 Латвія</strong>
+                <span>P. Шайцан</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h3>Написати нам</h3>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Ваше ім'я *</label>
+                  <input type="text" id="name" name="name" placeholder="Іван Іваненко" required />
+                </div>
+                <div class="form-group">
+                  <label for="company">Компанія</label>
+                  <input type="text" id="company" name="company" placeholder="ТОВ «Ваша компанія»" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" placeholder="email@example.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Телефон</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+38 0XX XXX XX XX" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Тема запиту</label>
+                <select id="subject" name="subject">
+                  <option value="">— Оберіть тему —</option>
+                  <option value="products">Запит щодо продукції</option>
+                  <option value="services">Послуги</option>
+                  <option value="price">Ціни та умови постачання</option>
+                  <option value="repair">Ремонт та обслуговування</option>
+                  <option value="rent">Оренда обладнання</option>
+                  <option value="other">Інше</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Повідомлення *</label>
+                <textarea id="message" name="message" placeholder="Опишіть ваш запит або запитання..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary form-submit">
+                Надіслати повідомлення
+              </button>
+              <div class="form-success" id="form-success">
+                ✅ Дякуємо! Ваше повідомлення надіслано. Ми відповімо найближчим часом.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">
+            <span class="logo-el">ЕЛ</span><span class="logo-tech">ТЕХ</span>
+          </a>
+          <p>ТзДВ «ЕЛТЕХ» — виробник намотувального та пресового обладнання. Заснований у 1989 році.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Продукція</h4>
+          <ul>
+            <li><a href="products.html#winding">Намотувальні верстати</a></li>
+            <li><a href="products.html#press">Пресове обладнання</a></li>
+            <li><a href="products.html#accessories">Пристрої та оснастка</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Компанія</h4>
+          <ul>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Контакти</h4>
+          <p>вул. Автобусна<br/>м. Нovovолинськ, 45400<br/>Україна</p>
+          <p><a href="tel:+380334441135">+38 03344 41135</a></p>
+          <p><a href="mailto:eltech@eltech.com.ua">eltech@eltech.com.ua</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 1997–2025 ТзДВ «ЕЛТЕХ». Всі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

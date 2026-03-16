@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЕЛТЕХ — Намотувальне і пресове обладнання</title>
+  <meta name="description" content="ТзДВ «ЕЛТЕХ» — виробник намотувальних верстатів та пресового обладнання. Понад 35 років досвіду. Нововолинськ, Україна." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="logo-el">ЕЛ</span><span class="logo-tech">ТЕХ</span>
+      </a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="index.html" class="nav__link active">Головна</a></li>
+        <li><a href="products.html" class="nav__link">Продукція</a></li>
+        <li><a href="services.html" class="nav__link">Послуги</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Контакти</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Hero ───────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="container hero__content">
+        <div class="hero__badge">🇺🇦 Ми працюємо під час воєнного стану</div>
+        <h1 class="hero__title">
+          Намотувальне і<br/>
+          <span class="text-accent">пресове обладнання</span>
+        </h1>
+        <p class="hero__subtitle">
+          Проектування та виробництво намотувальних верстатів, малогабаритних пресів і оснастки
+          з 1989 року. Надійність. Точність. Досвід.
+        </p>
+        <div class="hero__actions">
+          <a href="products.html" class="btn btn--white">Переглянути продукцію</a>
+          <a href="contact.html" class="btn btn--outline">Зв'язатись з нами</a>
+        </div>
+      </div>
+      <div class="hero__wave">
+        <svg viewBox="0 0 1440 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,36 C480,72 960,0 1440,36 L1440,72 L0,72 Z" fill="#f8fafc"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── Stats ──────────────────────────────────────────────── -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item">
+            <span class="stats__number">35+</span>
+            <span class="stats__label">Років досвіду</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number">9+</span>
+            <span class="stats__label">Країн-партнерів</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number">12</span>
+            <span class="stats__label">Моделей обладнання</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__number">999</span>
+            <span class="stats__label">Програм намотки</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Products Overview ──────────────────────────────────── -->
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Продукція</span>
+          <h2 class="section__title">Наше обладнання</h2>
+          <p class="section__subtitle">
+            Два основних напрямки виробництва для потреб електрорадіотехнічної
+            та машинобудівної промисловості
+          </p>
+        </div>
+        <div class="products__grid">
+          <div class="product-cat">
+            <div class="product-cat__icon">⚙️</div>
+            <h3 class="product-cat__title">Намотувальне обладнання</h3>
+            <p class="product-cat__desc">
+              Одношпиндельні верстати серії СУН для рядової та впорядкованої намотки котушок
+              проводом діаметром від 0,02 до 4,0 мм. Зручне діалогове програмування,
+              збереження до 999 програм намотки.
+            </p>
+            <ul class="product-cat__list">
+              <li>Верстат СУН-4 <span class="badge badge--new">Новинка</span></li>
+              <li>Верстат СУН-1.8М</li>
+              <li>Верстат СУН-1.8МЛ / МЛР</li>
+              <li>Верстат СУН-0.6 / 0.6Р</li>
+              <li>Додаткові пристрої та оснастка</li>
+            </ul>
+            <a href="products.html#winding" class="btn btn--primary btn--sm">Детальніше</a>
+          </div>
+
+          <div class="product-cat">
+            <div class="product-cat__icon">🔧</div>
+            <h3 class="product-cat__title">Пресове обладнання</h3>
+            <p class="product-cat__desc">
+              Настільні електричні преси та напівавтомати штампування для опресовки
+              контактних наконечників і штампування дрібних деталей з металевої
+              чи пластмасової стрічки.
+            </p>
+            <ul class="product-cat__list">
+              <li>Прес ПК-1.5П</li>
+              <li>Прес ПК-1.8</li>
+              <li>Напівавтомат ПАШ-6</li>
+              <li>Штампи ШО-1 / ШО-2</li>
+              <li>Пристрої УСН, УСНР, ПЗН-4</li>
+            </ul>
+            <a href="products.html#press" class="btn btn--primary btn--sm">Детальніше</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Services ───────────────────────────────────────────── -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Послуги</span>
+          <h2 class="section__title">Що ми пропонуємо</h2>
+          <p class="section__subtitle">
+            Комплексний підхід до вирішення виробничих задач замовника
+          </p>
+        </div>
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">📐</div>
+            <h3>Розробка технологій намотки</h3>
+            <p>Розробка технології, оснастки та програм намотки складних котушок будь-якої конфігурації.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🔄</div>
+            <h3>Намотка пробних партій</h3>
+            <p>Виготовлення пробних та дослідних партій без необхідності купувати обладнання.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🏗️</div>
+            <h3>Виготовлення оснастки</h3>
+            <p>Розробка та виготовлення штампів і оснастки для пресів серії ПК та ПАШ-6.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🔑</div>
+            <h3>Оренда обладнання</h3>
+            <p>Надання в оренду намотувального обладнання з можливістю подальшого викупу.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🛠️</div>
+            <h3>Ремонт і модернізація</h3>
+            <p>Післягарантійний ремонт та модернізація обладнання власного виробництва.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">💡</div>
+            <h3>Технічна підтримка</h3>
+            <p>Консультації, підбір конфігурації обладнання та навчання персоналу замовника.</p>
+          </div>
+        </div>
+        <div class="section__cta">
+          <a href="services.html" class="btn btn--primary">Всі послуги</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About ──────────────────────────────────────────────── -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about__layout">
+          <div class="about__content">
+            <span class="section__tag">Про нас</span>
+            <h2 class="section__title">35 років виробничого досвіду</h2>
+            <p>
+              Підприємство засновано 2 червня 1989 року як інженерно-технічний
+              кооператив «ЕЛЕКТРОТЕХНІКА». З моменту заснування займається проектуванням,
+              виробництвом і реалізацією намотувального обладнання та малогабаритних пресів.
+            </p>
+            <p>
+              Наше обладнання успішно працює на електрорадіотехнічних та машинобудівних
+              підприємствах України, Латвії, Литви, Польщі, Німеччини, Азербайджану,
+              Грузії, Казахстану та Узбекистану.
+            </p>
+            <p>
+              Всі виготовлені верстати проходять передприйомне обкатування не менше 8 годин
+              та забезпечуються якісним гарантійним обслуговуванням і технічною підтримкою.
+            </p>
+            <a href="contact.html" class="btn btn--primary">Зв'язатись з нами</a>
+          </div>
+          <div class="about__markets">
+            <h3>Наші ринки збуту</h3>
+            <div class="markets__list">
+              <div class="market-item">🇺🇦 Україна</div>
+              <div class="market-item">🇵🇱 Польща</div>
+              <div class="market-item">🇱🇻 Латвія</div>
+              <div class="market-item">🇱🇹 Литва</div>
+              <div class="market-item">🇩🇪 Німеччина</div>
+              <div class="market-item">🇦🇿 Азербайджан</div>
+              <div class="market-item">🇬🇪 Грузія</div>
+              <div class="market-item">🇰🇿 Казахстан</div>
+              <div class="market-item">🇺🇿 Узбекистан</div>
+            </div>
+            <div class="about__reps">
+              <h4>Офіційні представники</h4>
+              <p><strong>Польща:</strong> CONTRANS TI Sp. z o.o.</p>
+              <p><strong>Латвія:</strong> P. Шайцан</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ────────────────────────────────────────────────── -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-section__content">
+          <h2>Маєте запитання?</h2>
+          <p>Наші спеціалісти готові допомогти підібрати оптимальне рішення для вашого виробництва</p>
+          <div class="cta-section__contacts">
+            <a href="tel:+380334441135" class="cta-contact">
+              <span class="cta-contact__icon">📞</span>
+              <div>
+                <span class="cta-contact__label">Телефон</span>
+                <span class="cta-contact__value">+38 03344 41135</span>
+              </div>
+            </a>
+            <a href="tel:+380983785773" class="cta-contact">
+              <span class="cta-contact__icon">📱</span>
+              <div>
+                <span class="cta-contact__label">Мобільний</span>
+                <span class="cta-contact__value">+38 0983 785 773</span>
+              </div>
+            </a>
+            <a href="mailto:eltech@eltech.com.ua" class="cta-contact">
+              <span class="cta-contact__icon">✉️</span>
+              <div>
+                <span class="cta-contact__label">Email</span>
+                <span class="cta-contact__value">eltech@eltech.com.ua</span>
+              </div>
+            </a>
+          </div>
+          <a href="contact.html" class="btn btn--white">Написати нам</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">
+            <span class="logo-el">ЕЛ</span><span class="logo-tech">ТЕХ</span>
+          </a>
+          <p>ТзДВ «ЕЛТЕХ» — виробник намотувального та пресового обладнання. Заснований у 1989 році.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Продукція</h4>
+          <ul>
+            <li><a href="products.html#winding">Намотувальні верстати</a></li>
+            <li><a href="products.html#press">Пресове обладнання</a></li>
+            <li><a href="products.html#accessories">Пристрої та оснастка</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Компанія</h4>
+          <ul>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Контакти</h4>
+          <p>вул. Автобусна<br/>м. Нововолинськ, 45400<br/>Україна</p>
+          <p><a href="tel:+380334441135">+38 03344 41135</a></p>
+          <p><a href="mailto:eltech@eltech.com.ua">eltech@eltech.com.ua</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 1997–2025 ТзДВ «ЕЛТЕХ». Всі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
