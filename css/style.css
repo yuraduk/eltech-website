@@ -1,6 +1,6 @@
 /* ============================================
    ЕЛТЕХ — Modern Website Styles
-   Clean Light Theme
+   Clean Light Theme + Dark Mode
    ============================================ */
 
 :root {
@@ -100,6 +100,12 @@ ul { list-style: none; }
   color: var(--white) !important;
 }
 
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .nav__toggle {
   display: none;
   flex-direction: column;
@@ -115,6 +121,29 @@ ul { list-style: none; }
   background: var(--text);
   border-radius: 2px;
   transition: all var(--transition);
+}
+
+/* ============================================
+   THEME TOGGLE BUTTON
+   ============================================ */
+.theme-toggle {
+  background: var(--bg-alt);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all var(--transition);
+  flex-shrink: 0;
+  line-height: 1;
+}
+.theme-toggle:hover {
+  background: var(--primary-xlight);
+  border-color: var(--primary);
 }
 
 /* ============================================
@@ -948,4 +977,67 @@ ul { list-style: none; }
 @media (max-width: 480px) {
   .cta-section__content h2 { font-size: 1.7rem; }
   .contact-form { padding: 28px 20px; }
+}
+
+/* ============================================
+   DARK THEME
+   ============================================ */
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --bg-alt: #1e293b;
+  --text: #e2e8f0;
+  --text-light: #94a3b8;
+  --white: #1e293b;
+  --border: #334155;
+  --shadow: 0 1px 3px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.3);
+  --shadow-lg: 0 4px 24px rgba(0,0,0,0.5);
+  --primary-xlight: rgba(29,78,216,0.2);
+}
+
+[data-theme="dark"] .header {
+  background: rgba(15,23,42,0.96);
+}
+
+[data-theme="dark"] .nav__menu {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .hero__wave path {
+  fill: #0f172a;
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea,
+[data-theme="dark"] .form-group select {
+  background: #0f172a;
+  color: var(--text);
+}
+
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group textarea:focus,
+[data-theme="dark"] .form-group select:focus {
+  background: #0f172a;
+  box-shadow: 0 0 0 3px rgba(29,78,216,0.2);
+}
+
+[data-theme="dark"] .form-success {
+  background: #14532d;
+  border-color: #166534;
+  color: #86efac;
+}
+
+[data-theme="dark"] .badge--new {
+  background: #14532d;
+  color: #86efac;
+}
+
+[data-theme="dark"] .btn--white {
+  background: #1e293b;
+  color: #93c5fd;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .btn--white:hover {
+  background: #334155;
 }
