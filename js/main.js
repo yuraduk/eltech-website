@@ -2,6 +2,27 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ── Theme toggle ─────────────────────────────────────────────
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon   = themeToggle ? themeToggle.querySelector('.theme-toggle__icon') : null;
+
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('eltech-theme', theme);
+    if (themeIcon) themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+  };
+
+  // Set icon based on current theme (already applied by inline script)
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+  if (themeIcon) themeIcon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+    });
+  }
+
   // ── Sticky header shadow on scroll ──────────────────────────
   const header = document.getElementById('header');
   const onScroll = () => {
