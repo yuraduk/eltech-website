@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Контакти — ЕЛТЕХ</title>
-  <meta name="description" content="Контакти ТзДВ ЕЛТЕХ. Адреса: вул. Автобусна, м. Нововолинськ 45400, Україна. Тел: +38 03344 41135." />
+  <meta name="description" content="Контакти ТзДВ ЕЛТЕХ. Адреса: вул. Автобусна, м. Нovovолинськ 45400, Україна. Тел: +38 03344 41135." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <script>try{var t=localStorage.getItem('eltech-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
 
@@ -23,9 +24,14 @@
         <li><a href="services.html" class="nav__link">Послуги</a></li>
         <li><a href="contact.html" class="nav__link active nav__link--cta">Контакти</a></li>
       </ul>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Відкрити меню" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Перемкнути тему">
+          <span class="theme-toggle__icon">🌙</span>
+        </button>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Відкрити меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -57,7 +63,7 @@
                   <div class="contact-detail__value">
                     ТзДВ «ЕЛТЕХ»<br/>
                     вул. Автобусна<br/>
-                    м. Нововолинськ, 45400<br/>
+                    м. Нovovолинськ, 45400<br/>
                     Україна
                   </div>
                 </div>
